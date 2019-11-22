@@ -63,7 +63,7 @@ export default class Main extends React.Component {
     const labelWidth = 62;
     return (
       <Block horizontal="center">
-        <div style={{ width: 345 }}>
+        <div style={{ width: 345, paddingLeft: 5}}>
           <Block>
             <Upload onChange={this.onChangeFile}>
               <Button>选择文件</Button>
@@ -123,7 +123,7 @@ export default class Main extends React.Component {
       <Block className={styles.main_box} style={{ marginTop: 30 }}>
         {this.renderControl()}
         <div className={styles.canvas_box} style={{ flex: 1, minWidth: 345 }}>
-          <canvas style={{ width: "100%" }} ref={mainCanvas => (this.mainCanvas = mainCanvas)} />
+          <canvas style={{ width: "90%", height: "auto" }} ref={mainCanvas => (this.mainCanvas = mainCanvas)} />
         </div>
       </Block>
     );
