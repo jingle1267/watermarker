@@ -1,8 +1,11 @@
 {
   "private": true,
+  "homepage": "https://jingle1267.github.io/watermarker",
+  "name": "watermarker",
   "scripts": {
     "start": "roadhog server",
     "build": "roadhog build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint --ext .js src test",
     "precommit": "npm run lint"
   },
@@ -14,7 +17,8 @@
     "fs-alert": "^0.3.0",
     "react": "^16.2.0",
     "react-color": "^2.14.1",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "history": "latest"
   },
   "devDependencies": {
     "babel-plugin-dva-hmr": "^0.4.1",
@@ -24,6 +28,7 @@
     "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
+    "gh-pages": "^2.1.1",
     "husky": "^0.12.0",
     "redbox-react": "^1.4.3",
     "roadhog": "^2.5.0-beta.4"
