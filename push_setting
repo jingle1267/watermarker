@@ -1,0 +1,2 @@
+git remote add coding git@e.coding.net:keeeweee/watermark.git
+git push -u origin master
